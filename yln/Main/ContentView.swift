@@ -17,7 +17,7 @@ struct ContentView: View {
             Text("YLN")
                 .font(.title.bold())
                 .strikethrough()
-            HStack{
+            HStack(){
                 Image(systemName: "square.and.pencil")
                 TextField("YLN", text: $toDoString)
                     .font(.title)

@@ -8,31 +8,33 @@
 import SwiftUI
 
 struct ListView: View {
-    
-    struct TodoList: Identifiable {
-        let id = UUID()
-        var content: String
-    }
-    
-    private var todoList = [
-        TodoList(content: "SwiftUI"),
-        TodoList(content: "할 수 있다.")
-    ]
+    @State var text: String = "여기에 글을 작성하세요 😇"
+    @State var savedText: String = ""
     
     var body: some View {
-        List {
-            ForEach(0..<todoList.count, id: \.self) { i in
-                HStack {
-                    Button(action: {}, label: {
-                        Image(systemName: "square")
-                    })
-                    Text(todoList[i].content)
-                    Spacer()
-                    Button(action: {}, label: {
-                        Image(systemName: "trash")
-                    })
-                }
+        NavigationView {
+            VStack {
+                TextEditor(text: $text)
+                    .frame(height: 250)
+                    .colorMultiply(Color(hue: 1.0, saturation: 0.0, brightness: 0.833))
+                    .cornerRadius(10)
+                Button(action: {
+                    savedText = text
+                }, label: {
+                    Text("Save".uppercased())
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                })
+                Text(savedText)
+                
+                Spacer()
             }
+            .padding()
+            .navigationTitle("TextEditor")
         }
     }
 }
