@@ -7,9 +7,19 @@
 
 import SwiftUI
 
+/*
+ MVVM Architecture
+ 
+ Model - data point
+ View - UI
+ ViewModel - manages Models for view
+ 
+ */
+
 struct ListView: View {
     @State var text: String = "여기에 글을 작성하세요 😇"
     @State var savedText: String = ""
+    
     
     var body: some View {
         NavigationView {
@@ -34,7 +44,7 @@ struct ListView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("TextEditor")
+            .navigationTitle("편집기")
         }
     }
 }

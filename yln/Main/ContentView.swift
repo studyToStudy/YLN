@@ -10,28 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var toDoString = ""
+    @State var items: [String] = [
+        "This is the first Title",
+        "This is the second Title",
+        "Third!~"
+    ]
     
     var body: some View {
-        VStack{
-            Text("YLN")
-                .font(.title.bold())
-                .strikethrough()
-            HStack(){
-                Image(systemName: "square.and.pencil")
-                TextField("YLN", text: $toDoString)
-                    .font(.title)
-                //                  .multilineTextAlignment(.center)
+            List {
+                ForEach(items, id: \.self) { item in
+                    ListRowView(title: item)
+                }
             }
-            .textFieldStyle(DefaultTextFieldStyle())
-            .frame(width: 300, height: 50, alignment: .center)
-            ListView()
+            .navigationTitle("Todo List📝")
+            .navigationBarItems(leading: EditButton(), trailing: NavigationLink("ADD", destination: Text("Destination")))
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            NavigationView {
+                ContentView()
         }
     }
 }
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-        }
-    }

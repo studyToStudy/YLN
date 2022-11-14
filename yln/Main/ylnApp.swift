@@ -13,7 +13,9 @@ struct ylnApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView(){
+                ListView()
+            }
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

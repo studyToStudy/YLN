@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB3DBC2B2920F25800C3FD0B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DBC2A2920F25800C3FD0B /* ListView.swift */; };
+		DB3DBC3029224C8900C3FD0B /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DBC2F29224C8900C3FD0B /* ListRowView.swift */; };
 		DB950392291FDA4000AF575B /* ylnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB950391291FDA4000AF575B /* ylnApp.swift */; };
 		DB950394291FDA4000AF575B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB950393291FDA4000AF575B /* ContentView.swift */; };
 		DB950396291FDA4700AF575B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB950395291FDA4700AF575B /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		DB3DBC2A2920F25800C3FD0B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DB3DBC2F29224C8900C3FD0B /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		DB95038E291FDA4000AF575B /* yln.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yln.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB950391291FDA4000AF575B /* ylnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ylnApp.swift; sourceTree = "<group>"; };
 		DB950393291FDA4000AF575B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				DB950393291FDA4000AF575B /* ContentView.swift */,
+				DB3DBC2F29224C8900C3FD0B /* ListRowView.swift */,
 				DB950391291FDA4000AF575B /* ylnApp.swift */,
 			);
 			path = Main;
@@ -167,6 +170,7 @@
 				DB3DBC2B2920F25800C3FD0B /* ListView.swift in Sources */,
 				DB950392291FDA4000AF575B /* ylnApp.swift in Sources */,
 				DB95039E291FDA4700AF575B /* yln.xcdatamodeld in Sources */,
+				DB3DBC3029224C8900C3FD0B /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
