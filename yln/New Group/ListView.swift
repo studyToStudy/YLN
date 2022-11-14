@@ -44,7 +44,7 @@ struct ListView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("편집기")
+            .navigationTitle("일기장")
         }
     }
 }
