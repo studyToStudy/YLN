@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB3DBC2B2920F25800C3FD0B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DBC2A2920F25800C3FD0B /* ListView.swift */; };
+		DB3DBC2B2920F25800C3FD0B /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DBC2A2920F25800C3FD0B /* TextEditorView.swift */; };
 		DB3DBC3029224C8900C3FD0B /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DBC2F29224C8900C3FD0B /* ListRowView.swift */; };
 		DB3DBC322922785F00C3FD0B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3DBC312922785F00C3FD0B /* AddView.swift */; };
 		DB950392291FDA4000AF575B /* ylnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB950391291FDA4000AF575B /* ylnApp.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB3DBC2A2920F25800C3FD0B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DB3DBC2A2920F25800C3FD0B /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		DB3DBC2F29224C8900C3FD0B /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		DB3DBC312922785F00C3FD0B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		DB95038E291FDA4000AF575B /* yln.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yln.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,16 +49,9 @@
 				DB3DBC2F29224C8900C3FD0B /* ListRowView.swift */,
 				DB950391291FDA4000AF575B /* ylnApp.swift */,
 				DB3DBC312922785F00C3FD0B /* AddView.swift */,
+				DB3DBC2A2920F25800C3FD0B /* TextEditorView.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		DB67AA5E2920BD8E0058A528 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				DB3DBC2A2920F25800C3FD0B /* ListView.swift */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DB950385291FDA3F00AF575B = {
@@ -81,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				DB67AA5D2920BD740058A528 /* Main */,
-				DB67AA5E2920BD8E0058A528 /* New Group */,
 				DB950395291FDA4700AF575B /* Assets.xcassets */,
 				DB95039A291FDA4700AF575B /* Persistence.swift */,
 				DB95039C291FDA4700AF575B /* yln.xcdatamodeld */,
@@ -171,7 +163,7 @@
 				DB3DBC322922785F00C3FD0B /* AddView.swift in Sources */,
 				DB95039B291FDA4700AF575B /* Persistence.swift in Sources */,
 				DB950394291FDA4000AF575B /* ContentView.swift in Sources */,
-				DB3DBC2B2920F25800C3FD0B /* ListView.swift in Sources */,
+				DB3DBC2B2920F25800C3FD0B /* TextEditorView.swift in Sources */,
 				DB950392291FDA4000AF575B /* ylnApp.swift in Sources */,
 				DB95039E291FDA4700AF575B /* yln.xcdatamodeld in Sources */,
 				DB3DBC3029224C8900C3FD0B /* ListRowView.swift in Sources */,

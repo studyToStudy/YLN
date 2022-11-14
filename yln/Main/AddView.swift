@@ -13,7 +13,7 @@ struct AddView: View {
     
     var body: some View {
         ScrollView {
-            ListView()
+            TextEditorView()
         }
         .navigationTitle("Add an Item✏️")
     }

@@ -16,7 +16,7 @@ import SwiftUI
  
  */
 
-struct ListView: View {
+struct TextEditorView: View {
     @State var text: String = "여기에 글을 작성하세요 😇"
     @State var savedText: String = ""
     
@@ -49,8 +49,8 @@ struct ListView: View {
     }
 }
 
-struct ListView_Previews: PreviewProvider {
+struct TextEditorView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView()
+        TextEditorView()
     }
 }
