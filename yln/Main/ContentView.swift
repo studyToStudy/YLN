@@ -22,8 +22,12 @@ struct ContentView: View {
                     ListRowView(title: item)
                 }
             }
+            .listStyle(PlainListStyle())
             .navigationTitle("Todo List📝")
-            .navigationBarItems(leading: EditButton(), trailing: NavigationLink("ADD", destination: Text("Destination")))
+            .navigationBarItems(
+                leading: EditButton(),
+                trailing:
+                    NavigationLink("ADD", destination: Text("Destination")))
     }
 }
 
