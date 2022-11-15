@@ -44,7 +44,7 @@ struct TextEditorView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("일기장")
+//            .navigationTitle("일기장")
         }
     }
 }
