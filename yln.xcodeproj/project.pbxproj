@@ -55,6 +55,7 @@
 		DB3DBC362923D3A800C3FD0B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DB950393291FDA4000AF575B /* ContentView.swift */,
 				DB3DBC2F29224C8900C3FD0B /* ListRowView.swift */,
 				DB3DBC312922785F00C3FD0B /* AddView.swift */,
 				DB3DBC2A2920F25800C3FD0B /* TextEditorView.swift */,
@@ -66,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				DB950391291FDA4000AF575B /* ylnApp.swift */,
-				DB950393291FDA4000AF575B /* ContentView.swift */,
 				DB3DBC352923D36600C3FD0B /* Models */,
 				DB3DBC362923D3A800C3FD0B /* Views */,
 			);
