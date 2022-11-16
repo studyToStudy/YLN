@@ -10,13 +10,16 @@ import SwiftUI
 @main
 struct ylnApp: App {
     let persistenceController = PersistenceController.shared
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
 
     var body: some Scene {
         WindowGroup {
             NavigationView(){
                 ContentView()
             }
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            .environmentObject(listViewModel)
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
