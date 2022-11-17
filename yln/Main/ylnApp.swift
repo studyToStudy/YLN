@@ -20,6 +20,7 @@ struct ylnApp: App {
             }
             .environmentObject(listViewModel)
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            .environmentObject(ListViewModel())
         }
     }
 }
