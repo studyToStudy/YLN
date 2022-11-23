@@ -19,7 +19,6 @@ struct ContentView: View {
             } else {
                 List {
                     ForEach(listViewModel.items) { item in
-    //                    Text("Hi")
                         ListRowView(item: item)
                             .onTapGesture {
                                 withAnimation(.linear){
